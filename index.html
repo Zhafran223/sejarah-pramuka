@@ -5,53 +5,175 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sejarah Pramuka</title>
     <style>
-        /* Style CSS bisa ditambahkan di sini */
-        /* Style untuk foto */
-        #baden-powell {
-            width: 200px;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-            border-radius: 50%;
+        /* Style CSS untuk header */
+        header {
+            background-image: url('https://images.unsplash.com/photo-1521438672157-022281fb3396');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        /* Style CSS untuk judul */
+        h1 {
+            font-size: 3em;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        /* Style CSS untuk navigasi */
+        nav {
+            background-color: #008cba;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Style CSS untuk konten */
+        section {
+            padding: 20px;
+            margin-bottom: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        section h2 {
+            font-size: 2em;
             margin-bottom: 20px;
+            color: #008cba;
+        }
+
+        section p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        /* Style CSS untuk gambar */
+        .foto-tokoh {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 150px;
+            border-radius: 50%;
+            border: 3px solid #008cba;
+        }
+
+        /* Style CSS untuk tabel */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        /* Style CSS untuk footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 5px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 0.8em;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Sejarah Pramuka</h1>
-        <img id="baden-powell" src="https://cdn1-production-images-kly.akamaized.net/7_wJ75jZ0mjTWRmQ54RLAIKws7M=/800x1066/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/1927278/original/082428600_1519352072-Lord_Robert_Baden_Powell.jpg" alt="Baden Powell">
+        <nav>
+            <ul>
+                <li><a href="#pengertian">Pengertian</a></li>
+                <li><a href="#sejarah">Sejarah Perkembangan</a></li>
+                <li><a href="#pencapaian">Pencapaian Pramuka</a></li>
+                <!-- dan lainnya -->
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#pengertian">Pengertian</a></li>
-            <li><a href="#sejarah">Sejarah Perkembangan</a></li>
-            <li><a href="#pencapaian">Pencapaian Pramuka</a></li>
-            <!-- dan lainnya -->
-        </ul>
-    </nav>
     <section id="pengertian">
+        <img src="https://cdn1-production-images-kly.akamaized.net/7_wJ75jZ0mjTWRmQ54RLAIKws7M=/800x1066/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/1927278/original/082428600_1519352072-Lord_Robert_Baden_Powell.jpg" alt="Baden Powell" class="foto-tokoh">
         <h2>Pengertian Pramuka</h2>
-        <p>Pramuka adalah gerakan pendidikan kepanduan yang bertujuan untuk membantu pembinaan karakter generasi muda Indonesia agar menjadi warga negara yang beriman, bertakwa, berakhlak mulia, sehat, cerdas, kuat, cinta alam, dan memiliki keterampilan yang berguna bagi diri sendiri, keluarga, bangsa, dan negara, berdasarkan Pancasila dan Undang-Undang Dasar Negara Republik Indonesia Tahun 1945.</p>
+        <p>Pramuka adalah gerakan pendidikan kepanduan yang bertujuan untuk membantu pembinaan karakter generasi muda Indonesia. Gerakan ini mendorong agar mereka menjadi warga negara yang beriman, bertakwa, berakhlak mulia, sehat, cerdas, kuat, cinta alam, dan memiliki keterampilan yang berguna bagi diri sendiri, keluarga, bangsa, dan negara. Pramuka berdasarkan Pancasila dan Undang-Undang Dasar Negara Republik Indonesia Tahun 1945.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Pencapaian</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Pramuka telah berhasil membina jutaan pemuda Indonesia sejak berdiri.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Pramuka terus berperan aktif dalam pembangunan karakter generasi muda Indonesia.</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
     <section id="sejarah">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Robert_Baden-Powell_%28uniform%29.jpg/220px-Robert_Baden-Powell_%28uniform%29.jpg" alt="Baden Powell" class="foto-tokoh">
         <h2>Sejarah Perkembangan Pramuka</h2>
         <p>Gerakan Pramuka di Indonesia dimulai pada tahun 1912 ketika Baden Powell, pendiri Gerakan Pramuka sedunia, melakukan kunjungan ke Indonesia. Pramuka secara resmi diakui pada tanggal 14 Agustus 1961 oleh Pemerintah Indonesia dengan Surat Keputusan Presiden Nomor 462 Tahun 1961.</p>
         <p>Sejak itu, Pramuka telah mengalami perkembangan yang pesat dengan jumlah anggota yang terus bertambah dari waktu ke waktu. Pramuka tidak hanya aktif dalam kegiatan di dalam negeri, tetapi juga dalam kegiatan internasional, menjalin hubungan dengan Gerakan Pramuka sedunia dan organisasi kepanduan lainnya.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Pencapaian</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Pramuka memiliki jaringan yang luas di seluruh Indonesia.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Pramuka telah menerima berbagai penghargaan dan apresiasi atas kontribusinya dalam pembangunan masyarakat.</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
-    <section id="pencapaian">
-        <h2>Pencapaian Pramuka</h2>
-        <ul>
-            <li>Pramuka telah berhasil membina jutaan pemuda Indonesia sejak berdiri.</li>
-            <li>Pramuka terus berperan aktif dalam pembangunan karakter generasi muda Indonesia.</li>
-            <li>Pramuka memiliki jaringan yang luas di seluruh Indonesia.</li>
-            <li>Pramuka telah menerima berbagai penghargaan dan apresiasi atas kontribusinya dalam pembangunan masyarakat.</li>
-            <li>Pramuka terus melakukan inovasi dalam metode pendidikan kepanduan untuk mengikuti perkembangan zaman.</li>
-        </ul>
-    </section>
-    <!-- dan seterusnya -->
     <footer>
-        <p>&copy; 2024 Sejarah Pramuka</p>
+        <p>Dibuat oleh Nazila Putri Aulia</p>
     </footer>
 </body>
 </html>
